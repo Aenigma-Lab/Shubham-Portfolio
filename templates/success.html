@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- success.html -->
+<body style="height: 100%; margin: 0; display: flex; justify-content: center; align-items: center; background-color: white;">
+
+<!-- top-opt -->
+<div class="top-opt">
+    <div class="nav-button-wrap c_sb gradient-bg2">
+        <div class="nav-button"><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-subtitle"><a href="{% url "homepage-2" %}" class="ajax"><i class="fal fa-home"></i></a><span></span></div>
+    <a href="{% url "homepage-2" %}" class="ajax mob-logo"><span></span><strong></strong></a>
+    <a href="{% url "contact-us" %}" class="ajax to_contacts"><i class="far fa-envelope"></i> Get in Touch</a>
+    <div class="share-btn show-share isShare gradient-bg2">
+        <span>Share</span>
+        <i class="fas fa-share-alt"></i>
+    </div>
+</div>
+<!-- top-opt end -->
+
+<!-- content-holder -->
+<div class="content-holder" style="flex-grow: 1; display: flex; justify-content: center; align-items: center;">
+    <div id="wrapper">
+        <div class="scr-bar_dec"></div>
+        <div class="scr-bar_container">
+            <div class="content full-height" data-pagetitle="Success" data-pagesubtitle="Success">
+                <div class="success-content" style="text-align: center;">
+                    <div class="circle" style="width: 120px; height: 120px; background-color: #F89020; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: relative; margin: 0 auto;">
+                        <div class="checkmark" style="width: 45px; height: 110px; border: solid white; border-width: 0 8px 8px 0; transform: rotate(45deg); position: absolute; top: 5px; left: 40px;"></div>
+                       
+                    </div>
+                    <h2 style="margin: 20px 0;">Success!</h2>
+                    <h2 style="margin: 0; color: white;">Thank you for connecting with us! We will reach you very soon.</h2>
+                    <a href="{% url "homepage-2" %}" class="btn ajax color-bg" style="margin-top: 20px;"><span>Back to Home Page</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="share-wrapper">
+            <div class="share-container isShare"></div>
+        </div>
+    </div>
+
+    <!--page-load -->
+    <div class="page-load">
+        <div class="pl-spinner"><span></span></div>
+    </div>
+    <!--page-load end -->
+</div>
+<!-- content-holder end -->
+
+<style>
+    /* Additional styles if needed */
+    .checkmark {
+        border-color: white; /* Checkmark color */
+    }
+</style>
+
+</body>
+{% endblock %}

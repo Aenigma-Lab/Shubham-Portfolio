@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+       
+
+<!-- top-opt -->
+<div class="top-opt">
+    <div class="nav-button-wrap c_sb gradient-bg2">
+        <div class="nav-button"><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-subtitle"><a href="{% url "homepage-2" %}" class="ajax"><i class="fal fa-home"></i></a><span></span></div>
+    <a href="{% url "homepage-2" %}" class="ajax mob-logo"><span></span><strong></strong></a>
+    <a href="{% url "contact-us" %}" class="ajax to_contacts"><i class="far fa-envelope"></i> Get in Touch</a>
+    <div class="share-btn show-share isShare gradient-bg2">
+        <span>Share</span>
+        <i class="fas fa-share-alt"></i>
+    </div>
+</div>
+<!-- top-opt end -->
+
+<!-- content-holder -->
+<div class="content-holder">
+    <div id="wrapper">
+        <div class="scr-bar_dec"></div>
+        <div class="scr-bar_container">
+            <div class="content" data-pagetitle="Portfolio Single" data-pagesubtitle="Portfolio">
+                <div class="bg-top"></div>
+                <div class="bg-bottom"></div>
+                <!-- section -->
+                <section>
+                    <div class="section-title fl-wrap">
+                        <h3>Portfolio Project Title</h3>
+                    </div>
+                    <!-- portfolio start -->
+                    <div class="gallery-items three-column min-pad single-gallery lightgallery fl-wrap">
+                        <!-- gallery-item-->
+                        <div class="gallery-item">
+                            <div class="grid-item-holder hov_zoom">
+                                <img src="{% static 'images/folio/2.jpg' %}" alt="Project Image 1">
+                                <a href="{% static 'images/folio/2.jpg' %}" class="box-media-zoom popup-image" aria-label="Zoom in on Project Image 1"><i class="far fa-search"></i></a>
+                            </div>
+                        </div>
+                        <!-- Repeat for other images -->
+                    </div>
+                    <!-- portfolio end --> 									
+                    <div class="box-text-wrap fl-wrap">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="fl-wrap content-box single_pb">
+                                    <h4 class="bold-title">Project Info</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-text-wrap_item content-box">
+                                    <h5>Project Details</h5>
+                                    <ul>
+                                        <li><span>Category: Branding</span></li>
+                                        <li><span>Date: 02.03.2022</span></li>
+                                        <li><span>Client: Usla Ink</span></li>
+                                        <li><span>Address: domain.com</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content-nav_holder -->
+                    <div class="content-nav_holder fl-wrap cnh_sin-post">
+                        <div class="content-nav fl-wrap">
+                            <ul>
+                                <li>
+                                    <a href="portfolio-single.html" class="ln ajax"><i class="fas fa-caret-left"></i><span>Prev - Project Title</span></a>
+                                    <div class="content-nav_mediatooltip cnmd_leftside"><img src="{% static 'images/folio/1.jpg' %}" alt="Previous Project"></div>
+                                </li>
+                                <li>
+                                    <a href="portfolio-single2.html" class="rn ajax"><span>Next - Project Title</span> <i class="fas fa-caret-right"></i></a>
+                                    <div class="content-nav_mediatooltip cnmd_rightside"><img src="{% static 'images/folio/2.jpg' %}" alt="Next Project"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- content-nav_holder end -->								
+                </section>
+                <!-- section end -->                							
+                <div class="to-top-wrap">
+                    <div class="to-top color-bg"><i class="fas fa-caret-up"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- scroll-bar end -->
+        <div class="share-wrapper">
+            <div class="share-container isShare"></div>
+        </div>
+        <!-- share end -->							
+    </div>
+    <!-- wrapper end -->
+    <!-- page-load -->	
+    <div class="page-load">
+        <div class="pl-spinner"><span></span></div>
+    </div>
+    <!-- page-load end -->						 
+</div>
+<!-- content-holder end -->
+
+{% endblock %}

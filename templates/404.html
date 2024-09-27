@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- top-opt -->
+<div class="top-opt">
+    <div class="nav-button-wrap c_sb gradient-bg2">
+        <div class="nav-button"><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-subtitle"><a href="{% url "homepage-2" %}" class="ajax"><i class="fal fa-home"></i></a><span></span></div>
+    <a href="{% url "homepage-2" %}" class="ajax mob-logo"><span></span><strong></strong></a>
+    <a href="{% url "contact-us" %}" class="ajax to_contacts"><i class="far fa-envelope"></i> Get in Touch</a>
+    <div class="share-btn show-share isShare gradient-bg2">
+        <span>Share</span>
+        <i class="fas fa-share-alt"></i>
+    </div>
+</div>
+<!-- top-opt end -->
+
+<!-- content-holder -->
+<div class="content-holder">
+    <!--wrapper -->
+    <div id="wrapper">
+        <!--scroll-bar -->
+        <div class="scr-bar_dec"></div>
+        <div class="scr-bar_container">
+            <div class="content full-height" data-pagetitle="Error 404" data-pagesubtitle="Error 404">
+                <div class="bg-top"></div>
+                <div class="error-content">
+                    <div class="overlay"></div>
+                    <div class="bg" data-bg="{% static "images/bg/2.jpg" %}"></div>
+                    <div class="error-wrap fl-wrap">
+                        <div class="container">
+                            <h2>404</h2>
+                            <p>We're sorry, but the page you were looking for couldn't be found.</p>
+                            <a href="{% url "homepage-2" %}" class="btn ajax color-bg"><span>Back to Home Page</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--scroll-bar end -->
+        <!--share end -->
+        <div class="share-wrapper">
+            <div class="share-container isShare"></div>
+        </div>
+        <!--share end -->
+    </div>
+    <!--wrapper end -->
+
+    <!--page-load -->
+    <div class="page-load">
+        <div class="pl-spinner"><span></span></div>
+    </div>
+    <!--page-load end -->
+</div>
+<!-- content-holder end -->
+
+{% endblock %}

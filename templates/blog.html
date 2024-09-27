@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+    {% block content %}
+        {% load static %}
+
+                <!--header end-->
+                <!-- top-opt -->
+                <div class="top-opt">
+                    <div class="nav-button-wrap c_sb gradient-bg2">
+                        <div class="nav-button"><span></span><span></span><span></span></div>
+                    </div>
+                    <div class="page-subtitle"><a href="{% url "homepage-2" %}" class="ajax"><i class="fal fa-home"></i></a><span></span></div>
+                    <a href="{% url "homepage-2" %}" class="ajax mob-logo"><span></span><strong></strong></a>
+                    <a href="{% url "contact-us" %}" class="ajax to_contacts"><i class="far fa-envelope"></i> Get in Touch</a>
+                    <div class="share-btn show-share isShare gradient-bg2">
+                        <span>Share</span>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                </div>
+                <!-- top-opt end -->
+                <!-- content-holder -->
+                <div class="content-holder">
+                    <!--wrapper -->
+                    <div id="wrapper">
+                        <!--scroll-bar -->
+                        <div class="scr-bar_dec"></div>
+                        <div class="scr-bar_container">
+                            <div class="content no_tp" data-pagetitle="Last News" data-pagesubtitle="Stories">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <!--section  --> 
+                                <section>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <!--post  --> 
+                                            <div class="post fl-wrap">
+                                                <div class="section-title fl-wrap">
+                                                    <h3>The Rise of AI: Transforming Our World</h3>
+                                                    <span class="post-date"><i class="far fa-calendar"></i>15 march 2024 </span>	
+                                                </div>
+                                                <div class="post-media fl-wrap">
+                                                    <div class="single-slider-wrap fl-wrap">
+                                                        <div class="single-slider fl-wrap">
+                                                            <div class="swiper-container">
+                                                                <div class="swiper-wrapper lightgallery">
+                                                                    <div class="swiper-slide hov_zoom">
+                                                                        <img src="{% static 'images/folio/9.jpg' %}" alt="">
+                                                                        <a href="{% static 'images/folio/9.jpg' %}" class="box-media-zoom popup-image"><i class="fas fa-search"></i></a>
+                                                                    </div>
+                                                                    <div class="swiper-slide hov_zoom">
+                                                                        <img src="{% static 'images/folio/10.jpg' %}" alt="">
+                                                                        <a href="{% static 'images/folio/10.jpg' %}" class="box-media-zoom popup-image"><i class="fas fa-search"></i></a>
+                                                                    </div>
+                                                                    <div class="swiper-slide hov_zoom">
+                                                                        <img src="{% static 'images/folio/11.jpg' %}" alt="">
+                                                                        <a href="{% static 'images/folio/11.jpg' %}" class="box-media-zoom popup-image"><i class="fas fa-search"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ss-button ss-button-prev"><i class="fal fa-angle-left"></i></div>
+                                                            <div class="ss-button ss-button-next"><i class="fal fa-angle-right"></i></div>
+                                                            <div class="css-pagination-wrap">
+                                                                <div class="tc-pagination slider-pag"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="post-opt single_post-opt">
+                                                    <ul class="no-list-style">
+                                                        <li><i class="fal fa-eye"></i> <span>120 views</span></li>
+                                                        <li><i class="far fa-comments-alt"></i> <span>3 commnets</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="box-text-wrap fl-wrap">
+                                                    <p>Artificial Intelligence (AI) is no longer just a concept of science fiction; it has become an integral part of our daily lives, transforming industries and reshaping how we interact with technology. From virtual assistants to self-driving cars, AI is revolutionizing the way we live, work, and think.
+                                                    </p>
+                                                    <a href="{% url "blog-single" %}" class="btn ajax  color-bg"><span>Read More</span></a>
+                                                </div>
+                                            </div>
+                                            <!--post  end--> 	
+                                            <!--post  --> 
+                                            <div class="post fl-wrap">
+                                                <div class="section-title fl-wrap">
+                                                    <h3>Blue Screen of Death: Recent Microsoft Cyber Attack</h3>
+                                                    <span class="post-date"><i class="far fa-calendar"></i>20 march 2024 </span>	
+                                                </div>
+                                                <div class="post-media">
+                                                    <img src="{% static "images/folio/12.jpg" %}" class="respimg" alt="">
+                                                </div>
+                                                <div class="post-opt single_post-opt">
+                                                    <ul class="no-list-style">
+                                                        <li><i class="fal fa-eye"></i> <span>56 views</span></li>
+                                                        <li><i class="far fa-comments-alt"></i> <span>2 commnets</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="box-text-wrap fl-wrap">
+                                                    <p>In recent weeks, the tech world was rocked by a significant cyber attack targeting Microsoft systems, leaving many users facing the infamous “Blue Screen of Death” (BSOD). This event not only raised questions about cybersecurity but also highlighted the importance of understanding how such attacks can impact users and organizations alike. 
+                                                    </p>
+                                                    <a href="{% url "blog-single" %}" class="btn ajax  color-bg"><span>Read More</span></a>
+                                                </div>
+                                            </div>
+                                            <!--post  end--> 										
+                                            <!--pagination-->
+                                            <div class="pagination">
+                                                <a href="#" class="prevposts-link"><i class="fas fa-caret-left"></i></a>
+                                                <a href="#">01.</a>
+                                                <a href="#" class="current-page">02.</a>
+                                                <a href="#">03.</a>
+                                                <a href="#">04.</a>
+                                                <a href="#" class="nextposts-link"><i class="fas fa-caret-right"></i></a>
+                                            </div>
+                                            <!--pagination end-->										
+                                        </div>
+                                        <!-- sidebar -->
+                                        <div class="col-md-4">
+                                            <div class="main-sidebar fixed-bar fl-wrap">
+                                                <div class="widget-sidebar ws_column">
+                                                    <!-- widget -->
+                                                    <div class="widget-inner">
+                                                        <form action="#">
+                                                            <input name="se" id="se2" type="text" class="search" placeholder="Search..." value="" />
+                                                            <button class="search-submit  " id="submit_btn2"><i class="fa fa-search transition"></i> </button>
+                                                        </form>
+                                                    </div>
+                                                    <h3>Tags</h3>
+                                                    <div class="widget-inner">
+                                                        <ul class="post-tags">
+                                                            <li><a href="#">Trends</a></li>
+                                                            <li><a href="#">AI</a></li>
+                                                            <li><a href="#">Data Science</a></li>
+                                                            <li><a href="#">ML</a></li>
+                                                            <li><a href="#">Ethical hacking</a></li>
+                                                           
+                                                        </ul>
+                                                    </div>
+                                                    <!-- widget end  -->
+                                                    <!-- widget -->
+                                                    <h3>Categories</h3>
+                                                    <div class="widget-inner">
+                                                        <ul class="cat-wid">
+                                                            <li class="cat-item"><a href="#">Standard</a><span>3</span></li>
+                                                            <li class="cat-item"><a href="#">Video</a> <span>6</span></li>
+                                                            <li class="cat-item"><a href="#">Gallery</a> <span>12</span></li>
+                                                            <li class="cat-item"><a href="#">Quotes</a> <span>4</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- widget end  -->										
+                                                    <!-- widget  -->
+                                                    <h3>Last Posts</h3>
+                                                    <div class="widget-inner">
+                                                        <ul class="widget-posts">
+                                                            <li class="clearfix">
+                                                                <a href="{% url "blog-single" %}" class="widget-posts-img"><img src="{% static "images/folio/4.jpg" %}" class="respimg" alt=""></a>
+                                                                <div class="widget-posts-descr">
+                                                                    <a href="#" title="">Vivamus dapibus rutrum</a>
+                                                                    <span class="widget-posts-date"><i class="far fa-calendar"></i> 27 Mar 2021 </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <a href="{% url "blog-single" %}" class="widget-posts-img"><img src="{% static "images/folio/5.jpg" %}g" class="respimg" alt=""></a>
+                                                                <div class="widget-posts-descr">
+                                                                    <a href="#" title=""> Integer sagittis</a>
+                                                                    <span class="widget-posts-date"><i class="far fa-calendar"></i> 12 May 2021</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="clearfix">
+                                                                <a href="{% url "blog-single" %}" class="widget-posts-img"><img src="{% static "images/folio/6.jpg" %}" class="respimg" alt=""></a>
+                                                                <div class="widget-posts-descr">
+                                                                    <a href="#" title="">Snowy Mountains Trip</a>
+                                                                    <span class="widget-posts-date"><i class="far fa-calendar"></i> 22 Feb 2021 </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- widget end  -->
+                                                    <!-- widget -->
+                                                    <h3>Subscribe</h3>
+                                                    <div class="widget-inner">
+                                                        <div class="subcribe-form fl-wrap">
+                                                            <form id="subscribe">
+                                                                <input class="enteremail" name="email" id="subscribe-email" placeholder="Your Email" spellcheck="false" type="text">
+                                                                <button type="submit" id="subscribe-button" class="subscribe-button gradient-bg">Submit</button>
+                                                                <label for="subscribe-email" class="subscribe-message"></label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <!-- widget end  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- sidebar end -->
+                                    </div>
+                                </section>
+                                <!--section end-->                							
+                                <div class="to-top-wrap">
+                                    <div class="to-top color-bg"><i class="fas fa-caret-up"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--scroll-bar end -->
+                        <!--share end -->
+                        <div class="share-wrapper">
+                            <div class="share-container isShare"></div>
+                        </div>
+                        <!--share end -->
+                    </div>
+                    <!--wrapper end -->
+                    <!--page-load -->	
+                    <div class="page-load">
+                        <div class="pl-spinner"><span></span></div>
+                    </div>
+                    <!--page-load end -->					 
+                </div>
+                <!-- content-holder end -->
+               
+
+{% endblock %}

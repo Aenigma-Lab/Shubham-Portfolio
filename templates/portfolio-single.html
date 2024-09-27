@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+        
+
+<!-- top-opt -->
+<div class="top-opt">
+    <div class="nav-button-wrap c_sb gradient-bg2">
+        <div class="nav-button"><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-subtitle"><a href="{% url "homepage-2" %}" class="ajax"><i class="fal fa-home"></i></a><span></span></div>
+    <a href="{% url "homepage-2" %}" class="ajax mob-logo"><span></span><strong></strong></a>
+    <a href="{% url "contact-us" %}" class="ajax to_contacts"><i class="far fa-envelope"></i> Get in Touch</a>
+    <div class="share-btn show-share isShare gradient-bg2">
+        <span>Share</span>
+        <i class="fas fa-share-alt"></i>
+    </div>
+</div>
+<!-- top-opt end -->
+
+<!-- content-holder -->
+<div class="content-holder">
+    <div id="wrapper">
+        <div class="scr-bar_dec"></div>
+        <div class="scr-bar_container">
+            <div class="content" data-pagetitle="Portfolio Single" data-pagesubtitle="Portfolio">
+                <div class="bg-top"></div>
+                <div class="bg-bottom"></div>
+                <!-- Section -->
+                <section>
+                    <div class="section-title fl-wrap">
+                        <h3>Portfolio Project Title</h3>
+                    </div>
+                    <div class="center-carousel-wrap fl-wrap">
+                        <div class="center-carousel fl-wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper lightgallery">
+                                    <div class="swiper-slide hov_zoom">
+                                        <img src="{% static 'images/folio/1.jpg' %}" alt="Project Image 1">
+                                        <a href="{% static 'images/folio/1.jpg' %}" class="box-media-zoom popup-image" aria-label="Zoom in on Project Image 1"><i class="fal fa-search"></i></a>
+                                    </div>
+                                    <!-- Repeat for other images -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ts-controls">
+                            <div class="tc-button carousel-prev"><i class="fal fa-angle-left"></i></div>
+                            <div class="tc-button carousel-next"><i class="fal fa-angle-right"></i></div>
+                        </div>
+                        <div class="ss-pagination-wrap">
+                            <div class="tc-pagination2 slider-pag"></div>
+                        </div>
+                    </div>
+                    <div class="box-text-wrap fl-wrap">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="fl-wrap content-box single_pb">
+                                    <h4 class="bold-title">Project Info</h4>
+                                    <p>This project involves the development of a fully functional eCommerce website dedicated to selling a wide range of electrical and electronic products, including gadgets, appliances, and components. The platform aims to provide an intuitive shopping experience with features such as product filtering, user reviews, and secure payment options.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-text-wrap_item content-box">
+                                    <h5>Project Details</h5>
+                                    <ul>
+                                        <li><span>Category: E-Commerce Website</span></li>
+                                        <li><span>Date: 02.03.2023</span></li>
+                                        <li><span>Client: Tech Hub</span></li>
+                                        <li><span>Domain: elecload.com</span></li>
+                                        <li><span>Description: A platform for buying and selling electrical and electronic products, featuring a user-friendly interface and secure payment options.</span></li>
+                                        <li><span>Technologies: wordpress, js, mysqldb</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content Navigation Holder -->
+                    <div class="content-nav_holder fl-wrap cnh_sin-post">
+                        <div class="content-nav fl-wrap">
+                            <ul>
+                                <li>
+                                    <a href="portfolio-single.html" class="ln ajax"><i class="fas fa-caret-left"></i><span>Previous Project: Project Title</span></a>
+                                    <div class="content-nav_mediatooltip cnmd_leftside"><img src="{% static 'images/folio/1.jpg' %}" alt="Previous Project Image"></div>
+                                </li>
+                                <li>
+                                    <a href="portfolio-single2.html" class="rn ajax"><span>Next Project: Project Title</span> <i class="fas fa-caret-right"></i></a>
+                                    <div class="content-nav_mediatooltip cnmd_rightside"><img src="{% static 'images/folio/2.jpg' %}" alt="Next Project Image"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- content-nav_holder end -->								
+                </section>
+                <!-- section end -->                							
+                <div class="to-top-wrap">
+                    <div class="to-top color-bg"><i class="fas fa-caret-up"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- scroll-bar end -->
+        <div class="share-wrapper">
+            <div class="share-container isShare"></div>
+        </div>
+        <!-- share end -->							
+    </div>
+    <!-- wrapper end -->
+    <!-- page-load -->	
+    <div class="page-load">
+        <div class="pl-spinner"><span></span></div>
+    </div>
+    <!-- page-load end -->						 
+</div>
+<!-- content-holder end -->
+
+{% endblock %}

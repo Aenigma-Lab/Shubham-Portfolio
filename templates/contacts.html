@@ -1,0 +1,100 @@
+{% extends "base.html" %}{% load static %}
+
+    {% block content %}
+        
+<!-- top-opt -->
+<div class="top-opt">
+    <div class="nav-button-wrap c_sb gradient-bg2">
+        <div class="nav-button"><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-subtitle"><a href="{% url "homepage-2" %}" class="ajax"><i class="fal fa-home"></i></a><span></span></div>
+    <a href="{% url "homepage-2" %}" class="ajax mob-logo"><span></span><strong></strong></a>
+    <a href="{% url "contact-us" %}" class="ajax to_contacts"><i class="far fa-envelope"></i> Get in Touch</a>
+    <div class="share-btn show-share isShare gradient-bg2">
+        <span>Share</span>
+        <i class="fas fa-share-alt"></i>
+    </div>
+</div>
+<!-- top-opt end -->
+
+<!-- content-holder -->
+<div class="content-holder">
+    <div id="wrapper">
+        <div class="scr-bar_dec"></div>
+        <div class="scr-bar_container">
+            <div class="content" data-pagetitle="Get In Touch" data-pagesubtitle="Contacts">
+                <div class="bg-top"></div>
+                <div class="bg-bottom"></div>
+                <section>
+                    <div class="section-title fl-wrap">
+                        <h3>Contact Information</h3>
+                    </div>
+                    <div class="row">
+                        <!--card-item -->
+                        <div class="col-md-6">
+                            <div class="card-item fl-wrap">
+                                <i class="fal fa-envelope"></i>
+                                <span class="card-item_num">01.</span>
+                                <h4>Email</h4>
+                                <p>Thank you for reaching out to us.</p>
+                                <a href="mailto:f10.shubham@gmail.com" class="card-link">f10.shubham@gmail.com</a>
+                            </div>
+                        </div>
+                        <!--card-item end -->
+                        <!--card-item -->
+                        <div class="col-md-6">
+                            <div class="card-item fl-wrap">
+                                <i class="fas fa-phone"></i>
+                                <span class="card-item_num">02.</span>
+                                <h4>Phone Numbers</h4>
+                                <p>Thank you for connecting with us.</p>
+                                <a href="tel:+918356083921" class="card-link">+918356083921</a>
+                            </div>
+                        </div>
+                        <!--card-item end -->
+                    </div>
+                </section>
+                <section>
+                    <div class="section-title fl-wrap">
+                        <h3>Send Me a Message</h3>
+                    </div>
+                    <!--contact-form-wrap -->
+                    <div class="contact-form-wrap">
+                        <div id="contact-form" class="contact-form fl-wrap">
+                            <div id="message"></div>
+                            <form class="custom-form" action="{% url 'contact-us-submit' %}" method="POST" name="contactform" id="contactform">
+                                {% csrf_token %}
+                                <fieldset>
+                                    <div class="input-wrap"><i class="far fa-user-plus"></i><input type="text" name="name" id="name" placeholder="Your Name *" required/></div>
+                                    <div class="input-wrap"><i class="far fa-envelope"></i><input type="email" name="email" id="email" placeholder="Email Address*" required/></div>
+                                    <div class="input-wrap"><i class="far fa-comment-alt"></i><textarea name="comments" id="comments" cols="40" rows="3" placeholder="Your Message:" required></textarea></div>
+                                </fieldset>
+                                <button type="submit" class="btn float-btn color-bg" id="submit"><span>Send Message</span></button>
+                            </form>
+                        </div>
+                        <!-- contact form end--> 					
+                    </div>
+                    <!--contact-form-wrap end-->								
+                </section>
+                <div class="to-top-wrap">
+                    <div class="to-top color-bg"><i class="fas fa-caret-up"></i></div>
+                </div>
+            </div>
+        </div>
+        <!--scroll-bar end -->
+        <!--share end -->
+        <div class="share-wrapper">
+            <div class="share-container isShare"></div>
+        </div>
+        <!--share end -->							
+    </div>
+    <!--wrapper end -->
+    <!--page-load -->	
+    <div class="page-load">
+        <div class="pl-spinner"><span></span></div>
+    </div>
+    <!--page-load end -->						 
+</div>
+<!-- content-holder end -->
+
+{% endblock %}

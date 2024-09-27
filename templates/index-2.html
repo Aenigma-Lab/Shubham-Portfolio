@@ -1,0 +1,284 @@
+{% extends "base.html" %}
+    {% block content %}
+        {% load static %}
+
+<!-- top-opt -->
+<div class="top-opt">
+    <div class="nav-button-wrap c_sb gradient-bg2">
+        <div class="nav-button"><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-subtitle"><a href="index-2.html" class="ajax"><i class="fal fa-home"></i></a><span></span></div>
+    <a href="index-2.html" class="ajax mob-logo"><span></span><strong></strong></a>
+    <a href="{% url "contact-us" %}" class="ajax to_contacts"><i class="far fa-envelope"></i> Get in Touch</a>
+    <div class="share-btn show-share isShare gradient-bg2">
+        <span>Share</span>
+        <i class="fas fa-share-alt"></i>
+    </div>
+</div>
+<!-- top-opt end -->
+
+<!-- content-holder -->
+<div class="content-holder">
+    <div id="wrapper">
+        <div class="scr-bar_container">
+            <div class="content" data-pagetitle="About Me" data-pagesubtitle="Home">
+                <div class="bg-top"></div>
+                <div class="bg-bottom"></div>
+                
+                <!-- Hero Section -->
+                <section class="hero-section">
+                    <div class="bg-wrap hero-section_bg">
+                        <div class="bg" data-bg="{% static 'images/bg/1.jpg' %}"></div>
+                    </div>
+                    <div class="hero-section-title">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="rotate_text hero-decor-let">
+                                    <div>backend Developer</div>
+                                    <div><span>Full Stack Developer</span></div>
+                                    <div>Software Developer</div>
+                                    <div><span>AI Engineer</span></div>
+                                </div>
+                                <h2>Welcome to My Portfolio</h2>
+                                <div class="video_btn-wrap fl-wrap">
+                                    <a data-src="https://vimeo.com/1013493755" class="image-popup gradient-bg" aria-label="Play Video Presentation">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                    <span>Play Video Presentation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Hero Section End -->
+
+                <!-- About Me Section -->
+                <section>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p>I am a Full-Stack Developer skilled in Python, JavaScript, HTML, CSS, Frappe, and Django. Keen on exploring Data Science, AI, and ML. Eager to learn and grow in these areas.</p>
+                            <div class="facts-container fl-wrap">
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="20">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Finished Projects</h6>
+                                    </div>
+                                </div>
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="800">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Working Hours</h6>
+                                    </div>
+                                </div>
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="60">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Features Developed</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="hero-info-list fl-wrap">
+                                <ul>
+                                    <li><strong>Name</strong><span>Shubham Mishra</span></li>
+                                    <li><strong>Company</strong><span>Preciholesports Pvt Ltd</span></li>
+                                    <li><strong>Residence</strong><span>Thane, Maharashtra</span></li>
+                                    <li><strong>Phone</strong><span>+91 83560 83921</span></li>
+                                    <li><strong>Email</strong><span><a href="mailto:f10.shubham@gmail.com">f10.shubham@gmail.com</a></span></li>
+                                </ul>
+                                <a href="{% url "portfolio" %}" class="btn ajax fl-btn color-bg"><span>My Portfolio</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- About Me Section End -->
+
+                <!-- Services Section -->
+                <section class="serv-sec">
+                    <div class="section-title fl-wrap">
+                        <h3>Live projects made</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="column-wrapper_text services-item fl-wrap">
+                                <span class="serv-number">01.</span>
+                                <i class="fal fa-desktop"></i>
+                                <h4> India Tech World</h4>
+                                <p>I developed a user-friendly website that connects customers with skilled technicians for computer and laptop repairs. This platform allows users to easily reach out for expert support.</p>
+                                <ul class="serv-list">
+                                    <li>Code</li>
+                                    <li>workflow</li>
+                                    <li>Hosting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="column-wrapper_text services-item fl-wrap">
+                                <span class="serv-number">02.</span>
+                                <i class="fab fa-pagelines"></i>
+                                <h4>ElectLoad</h4>
+                                <p>This e-commerce website offers a wide range of electrical and electronic products for sale, providing customers with a convenient platform to browse and purchase items easily.</p>
+                                <ul class="serv-list">
+                                    <li>code</li>
+                                    <li>frontend</li>
+                                    <li>backend</li>
+                                    <li>Hosting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--section end --> 
+               <!--section Github project start here  --> 
+                <section class="serv-sec">
+                    <div class="section-title fl-wrap">
+                        <h3>Github Projects</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="column-wrapper_text services-item fl-wrap">
+                                <span class="serv-number">01.</span>
+                                <i class="fas fa-file-pdf"></i>
+                                <h4>Pdf Water Marking Tool</h4>
+                                <p>This PDF watermarking tool allows users to easily add customized watermarks to their documents, enhancing security and branding. It's perfect for protecting sensitive information and ensuring your content remains identifiable.</p>
+                                <ul class="serv-list">
+                                    <li>Code</li>
+                                    <li>flask</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="column-wrapper_text services-item fl-wrap">
+                                <span class="serv-number">02.</span>
+                                <i class="fas fa-briefcase"></i>
+                                <h4>Django Portfolio Website</h4>
+                                <p>I created a portfolio website in Django to showcase my projects and skills. The site features a clean, modern design that highlights my work. It’s easy to navigate, making it user-friendly for visitors.</p>
+                                <ul class="serv-list">
+                                    <li>Python</li>
+                                    <li>Javascript</li>
+                                    <li>Django</li>
+                                    <li>Hosting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--section  --> 
+                <section class="scroll_sec" id="sec5">
+                    <div class="section-title fl-wrap">
+                        <h3>Clents And Testimonilas</h3>
+                    </div>
+                    <div class="testilider fl-wrap">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="testi-item fl-wrap">
+                                        <span class="testi-number">01.</span>
+                                        <div class="testi-avatar"><img src="{% static 'images/avatar/2.jpg' %}" alt=""></div>
+                                        <h3>Rajesh Kumar</h3>
+                                        <p>"The service provided was exceptional, going above and beyond my expectations. The team's attention to detail made all the difference in the outcome of the project."</p>
+                                        <a href="#" class="teti-link" target="_blank">Via Facebook</a>
+                                    </div>
+                                </div>
+                                <!-- swiper-slide end-->
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="testi-item fl-wrap">
+                                        <span class="testi-number">02.</span>
+                                        <div class="testi-avatar"><img src="{% static 'images/avatar/3.jpg' %}" alt=""></div>
+                                        <h3>Sneha Patel</h3>
+                                        <p>"An outstanding experience! The professionalism and commitment to quality were evident in every aspect of their work. I couldn't be happier with the results."</p>
+                                        <a href="#" class="teti-link" target="_blank">Via Twitter</a>
+                                    </div>
+                                </div>
+                                <!-- swiper-slide end-->
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="testi-item fl-wrap">
+                                        <span class="testi-number">03.</span>
+                                        <div class="testi-avatar"><img src="{% static 'images/avatar/4.jpg' %}" alt=""></div>
+                                        <h3>Aarav Singh</h3>
+                                        <p>"Their dedication to excellence is truly inspiring. They handled every challenge with grace and creativity, resulting in a product that far exceeded my expectations."</p>
+                                        <a href="#" class="teti-link" target="_blank">Via Facebook</a>
+                                    </div>
+                                </div>
+                                <!-- swiper-slide end-->
+                                <!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="testi-item fl-wrap">
+                                        <span class="testi-number">04.</span>
+                                        <div class="testi-avatar"><img src="{% static 'images/avatar/5.jpg' %}" alt=""></div>
+                                        <h3>Priya Verma</h3>
+                                        <p>"The team's ability to listen and understand my vision was remarkable. They transformed my ideas into reality with precision and flair."</p>
+                                        <a href="#" class="teti-link" target="_blank">Via LinkedIn</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-item fl-wrap">
+                                        <span class="testi-number">05.</span>
+                                        <div class="testi-avatar"><img src="{% static 'images/avatar/6.jpg' %}" alt=""></div>
+                                        <h3>Vikram Sharma</h3>
+                                        <p>"I am thoroughly impressed with the level of expertise and creativity displayed. Their innovative approach made all the difference in achieving outstanding results."</p>
+                                        <a href="#" class="teti-link" target="_blank">Via Instagram</a>
+                                    </div>
+                                </div>
+                                <!-- swiper-slide end-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ts-controls">
+                        <div class="tc-button tc-button-prev"><i class="fal fa-angle-left"></i></div>
+                        <div class="tc-button tc-button-next"><i class="fal fa-angle-right"></i></div>
+                    </div>
+                    <div class="ss-pagination-wrap">
+                        <div class="tc-pagination slider-pag"></div>
+                    </div>
+                    <!-- client-list -->
+                    <div class="fl-wrap client-list">
+                        <ul class="">
+                            <li><a href="#" target="_blank"><img src="{% static 'images/clients/1.png' %}" alt=""></a></li>
+                            <li><a href="#" target="_blank"><img src="{% static 'images/clients/2.png' %}" alt=""></a></li>
+                            <li><a href="#" target="_blank"><img src="{% static 'images/clients/3.png' %}" alt=""></a></li>
+                            <li><a href="#" target="_blank"><img src="{% static 'images/clients/4.png' %}" alt=""></a></li>
+                        </ul>
+                        <!-- client-list end-->
+                    </div>
+                </section>
+                <!--section end-->                							
+                <div class="to-top-wrap">
+                    <div class="to-top color-bg"><i class="fas fa-caret-up"></i></div>
+                </div>
+            </div>
+        </div>
+        <!--scroll-bar end -->
+        <!--share end -->
+        <div class="share-wrapper">
+            <div class="share-container isShare"></div>
+        </div>
+        <!--share end -->							
+    </div>
+    <!--wrapper end -->
+    <!--page-load -->	
+    <div class="page-load">
+        <div class="pl-spinner"><span></span></div>
+    </div>
+    <!--page-load end -->
+</div>
+<!-- content-holder end -->
+
+{% endblock %}

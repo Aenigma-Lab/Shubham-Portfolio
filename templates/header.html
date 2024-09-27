@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8">
+    <title>Shubham Portfolio</title>
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content="Shubham, Portfolio, Software Engineer"/>
+    <meta name="description" content="Portfolio of Shubham Mishra, Software Engineer specializing in web development."/>
+    <!--=============== css  ===============-->    
+    <link type="text/css" rel="stylesheet" href="{% static 'css/plugins.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/color.css' %}">
+    <!--=============== favicons ===============-->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <!--Loader -->
+    <div class="body-preload">
+        <div class="pl-spinner2"><span></span></div>
+    </div>
+    <!-- loader end  -->
+    <!-- main start  -->
+    <div id="main">
+        <!--main-container -->
+        <div class="main-container">
+            <!--header -->
+            <header class="main-header">
+                <div class="header-titile">
+                    <h1>Shubham Mishra</h1>
+                    <h4>Software Engineer</h4>
+                </div>
+                <a data-src="{% static 'images/main.jpg' %}" class="image-popup header-popup color-bg"><i class="fal fa-plus"></i></a>
+                <div class="header-titile-img">
+                    <div class="bg" data-bg="{% static 'images/main.jpg' %}"></div>
+                </div>
+                <div class="main-menu-wrap">
+                    <!-- nav -->
+                    
+                    <nav class="nav-inner fl-wrap" id="menu">
+                        <ul>
+                           
+                            <li><a href="{% url 'homepage-2' %}" class="ajax"><i class="fal fa-home"></i> Home</a></li>
+                            <li><a href="{% url 'resume' %}" class="ajax"><i class="fal fa-address-card"></i> Resume</a></li>
+                            <li><a href="{% url 'portfolio' %}" class="ajax"><i class="fal fa-images"></i> Portfolio</a></li>
+                            <li><a href="{% url 'contact-us' %}" class="ajax"><i class="fal fa-envelope"></i> Contacts</a></li>
+                            <li><a href="{% url 'my-blog' %}" class="ajax"><i class="fal fa-book"></i> Blog</a></li>
+                            <li>
+                                <a href="#"><i class="fal fa-layer-group"></i> Pages</a>
+                                <!--level 2 -->
+                                <ul>
+                                    <li><a href="{% url 'portfolio-single' %}" class="ajax">Portfolio Single</a></li>
+                                    <li><a href="{% url 'portfolio-single-2' %}" class="ajax">Portfolio Single 2</a></li>
+                                    <li><a href="{% url 'blog-single' %}" class="ajax">Blog Single</a></li>
+                                    <li><a href="{% url 'page404' %}" class="ajax">404</a></li>
+                                </ul>
+                                <!--level 2 end -->
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- nav end-->
+                </div>
+                <a href="https://drive.google.com/file/d/1XtPgC3Saf9s38qU-E6pweu4VI6psRFYi/view?usp=sharing" target= " " download class="header_btn gradient-bg"><i class="fas fa-download"></i> Download CV</a>
+            </header>
+            <!--header end-->
