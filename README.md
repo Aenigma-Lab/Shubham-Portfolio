@@ -28,15 +28,12 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
    cd shubham-portfolio
 
 3. Install dependencies:
-    ```bash
   pip install -r requirements.txt
 
 4. Run migrations:
-    ```bash
   python manage.py migrate
 
 5.  Start the development server:
-    ```bash
    python manage.py runserver
 
 
