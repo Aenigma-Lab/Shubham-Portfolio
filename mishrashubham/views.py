@@ -65,12 +65,10 @@ def resume(request):
 
 def contact_us_submit(request):
     if request.method == 'POST':
-        csrf_token = request.POST.get('csrfmiddlewaretoken')
-        print(f"CSRF Token: {csrf_token}")  # Debugging line
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('success-page')
+            return redirect('success-page') 
     else:
         form = ContactForm()
 

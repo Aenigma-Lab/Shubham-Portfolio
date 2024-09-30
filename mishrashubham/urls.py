@@ -21,11 +21,16 @@ Including another URLconf
 
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include, re_path
 from mishrashubham import views  # Single import statement for views
-
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns # new
+from django.views.static import serve
 
 urlpatterns = [
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
     path('admin/', admin.site.urls),
     path('', views.home_page, name='homepage'),  # Home page
     path('index-2/', views.homePage_2, name='homepage-2'),  # Alternate home page
@@ -37,7 +42,7 @@ urlpatterns = [
     path('blog/', views.my_blog, name='my-blog'),  # Blog page
     path('blog-single/', views.blog_single, name='blog-single'),  # Blog page
     path('resume/', views.resume, name='resume'),  # Resume page
-    path('contact-us-submit/', views.contact_us_submit, name='contact-us-submit'),  # Resume page
+    path('contact-us-submit/', views.contact_us_submit, name='contact-us-submit'),
     path('success-page/', views.success_page, name='success-page'), 
 
 ]

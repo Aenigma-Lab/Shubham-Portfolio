@@ -1,4 +1,5 @@
-# Shubham-Portfolio
+## Shubham-Portfolio
+
 
 Welcome to my personal portfolio! This project showcases my skills, projects, and experiences using Django, a powerful web framework.
 
@@ -24,20 +25,20 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
    git clone https://github.com/Aenigma-Lab/Shubham-Portfolio.git
 
 2. Navigate to the project directory:
-    ```bash
+```bash
    cd shubham-portfolio
+   ```
 
 3. Install dependencies:
-    ```bash
+```bash
   pip install -r requirements.txt
-
+  ```
 4. Run migrations:
-    ```bash
+```bash
   python manage.py migrate
-
+  ```
 5.  Start the development server:
-    ```bash
+ ```bash
    python manage.py runserver
-
-
-
+   ```
+The application should be available at http://localhost:8000/ through your browser
