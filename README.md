@@ -41,4 +41,4 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
  ```bash
    python manage.py runserver
    ```
-The application should be available at https://mishrashubham.com through your browser.
+The application should be available at https://mishrashubham.online through your browser.
