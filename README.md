@@ -10,8 +10,6 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ---
 
----
-
 ## ✨ Features
 
 - **Responsive Design**: Optimized for both desktop and mobile devices.  
@@ -38,8 +36,8 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 Here’s a sneak peek of the portfolio interface:
 
 <p align="center">
-  <!-- Replace with your actual image link or file path -->
-  <img src="https://raw.githubusercontent.com/Aenigma-Lab/Shubham-Portfolio/main/path/to/another-screenshot.png" alt="Screenshot of Shubham Portfolio" width="700px" />
+  <!-- Replace the URL below with the RAW link if you prefer a direct image load -->
+  <img src="https://raw.githubusercontent.com/Aenigma-Lab/Shubham-Portfolio/main/shubham_skills.png" alt="Shubham Portfolio Screenshot" width="800px" />
 </p>
 
 ---
