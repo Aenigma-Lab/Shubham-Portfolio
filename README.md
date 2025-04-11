@@ -41,8 +41,11 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 Here’s a sneak peek of the portfolio interface:
 
 <p align="center">
-  <!-- Replace the URL below with the RAW link if you prefer a direct image load -->
-  <img src="https://raw.githubusercontent.com/Aenigma-Lab/Shubham-Portfolio/main/shubham_skills.png" alt="Shubham Portfolio Screenshot" width="800px" />
+  <a href="https://mishrashubham.online/resume" target="_blank">
+    <img src="https://raw.githubusercontent.com/Aenigma-Lab/Shubham-Portfolio/main/shubham_skills.png" 
+         alt="Shubham Portfolio Screenshot" 
+         width="800px" />
+  </a>
 </p>
 
 ---
