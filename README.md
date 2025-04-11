@@ -4,11 +4,13 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 
 <p align="center">
-  <!-- Replace the URL below with the RAW link if you prefer a direct image load -->
-  <img src="https://raw.githubusercontent.com/Aenigma-Lab/Shubham-Portfolio/main/shubham_portfolio.png" alt="Shubham Portfolio Screenshot" width="800px" />
-  
+  <a href="https://mishrashubham.online" target="_blank">
+    <img src="https://raw.githubusercontent.com/Aenigma-Lab/Shubham-Portfolio/main/shubham_portfolio.png" 
+         alt="Shubham Portfolio Screenshot" 
+         width="800px" />
+  </a>
 </p>
-[![Shubham Portfolio Screenshot](https://raw.githubusercontent.com/Aenigma-Lab/Shubham-Portfolio/main/shubham_portfolio.png)](https://mishrashubham.online)
+
 
 
 ---
