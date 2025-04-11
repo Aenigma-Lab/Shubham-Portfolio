@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This project showcases my skills, projects, and experiences using **Django**, a powerful web framework for building dynamic websites.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Aenigma-Lab/Shubham-Portfolio/main/path/to/your-screenshot.png" alt="Shubham Portfolio Screenshot" width="800px" />
+  <img src="https://github.com/Aenigma-Lab/Shubham-Portfolio/blob/main/shubham_portfolio.png.png" alt="Shubham Portfolio Screenshot" width="800px" />
 </p>
 
 ---
